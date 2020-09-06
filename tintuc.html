@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="icon" href="https://phephim.vn/wp-content/uploads/2020/05/cropped-site-icon-192x192.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d9970ccb7f.js" crossorigin="anonymous"></script>
+  <title>Phim Review</title>
+</head>
+
+<body>
+  <div class="container-md">
+    <nav class="navbar navbar-expand-lg">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" style="width: 50px" href="/index.html">
+        <img src="https://phephim.vn/wp-content/uploads/2020/05/pp-small-logo1.png" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./tintuc.html">TIN TỨC</a>
+            <ul class="dropdown-menu" id="news" style="margin-top: 0; z-index: 2">
+              <li><a href="./tintuc.html" class="dropdown-item">Điện Ảnh</a></li>
+              <li><a href="./tintuc.html" class="dropdown-item">Truyền Hình</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./giaithuong.html">GIẢI THƯỞNG & SỰ KIỆN</a>
+            <ul class="dropdown-menu dropdown-multicol2" style="margin-top: 0; z-index: 2">
+              <li class="dropdown-col">
+                <a href="./details.html" id="0" class="dropdown-item" onclick="detail(id)">
+                  <img width="150" height="100"
+                    src="https://phephim.vn/wp-content/uploads/2020/07/mây-nhưng-không-mưa-600x337.jpg" alt="" />
+                  <p>'Mây Nhưng Không Mưa' Tranh giải Tại LHP Vence
+
+                  </p>
+                </a>
+              </li>
+              <li class="dropdown-col">
+                <a href="./details.html" id="1" class="dropdown-item" onclick="detail(id)">
+                  <img width="150" height="100"
+                    src="https://phephim.vn/wp-content/uploads/2020/07/topoemmy2020indicadosok-600x337.jpg" alt="" />
+                  <p>Lễ Trao Giải Emmy 2020 Sẽ Diễn Ra Trực Tuyến Thay Vì Trên Sân Khấu Truyền Thống</p>
+                </a>
+              </li>
+              <li class="dropdown-col">
+                <a href="./details.html" id="2" class="dropdown-item" onclick="detail(id)">
+                  <img width="150" height="100"
+                    src="https://phephim.vn/wp-content/uploads/2020/07/merlin_173669565_488ce274-d89f-4d0c-bf1b-df0c8ee341d2-superJumbo-600x337.jpg"
+                    alt="" />
+                  <p>Netflix Có Số Đề Cử Emmy Cao Kỷ Lục Nhưng HBO Vẫn Là Người Giành Chiến Thắng Lớn</p>
+                </a>
+              </li>
+              <li class="dropdown-col">
+                <a href="./details.html" id="3" onclick="detail(id)" class="dropdown-item">
+                  <img width="150" height="100"
+                    src="https://phephim.vn/wp-content/uploads/2020/07/2020-Emmy-nominations-Watchmen-Succession-Dead-To-Me-750x400-1-600x337.jpg"
+                    alt="" />
+                  <p>Netflix Đứng Đầu Số Lượng Đề Cử Emmy 2020
+
+                  </p>
+                </a>
+              </li>
+              <li class="dropdown-col">
+                <a href="./details.html" id="4" class="dropdown-item" onclick="detail(id)">
+                  <img width="150" height="100"
+                    src="https://phephim.vn/wp-content/uploads/2020/07/notting-hill-1-600x337.jpg" alt="" />
+                  <p>Notting Hill: Những Chuyện Chưa Kể
+
+
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./video.html">VIDEO</a>
+            <ul class="dropdown-menu dropdown-multicol2" style="margin-top: 0; z-index: 2">
+              <li class="dropdown-col">
+                <a href="./details.html" id="5" class="dropdown-item" onclick="detail(id)">
+                  <img width="150" height="100"
+                    src="https://phephim.vn/wp-content/uploads/2020/07/maxresdefault-600x337.jpg" alt="" />
+                  <p>Top 9 Phim về Phản Địa Đàng Hay Nhất
+
+                  </p>
+                </a>
+              </li>
+              <li class="dropdown-col">
+                <a href="./details.html" id="6" class="dropdown-item" onclick="detail(id)">
+                  <img width="150" height="100"
+                    src="https://phephim.vn/wp-content/uploads/2020/06/davy-jones-600x337.jpg" alt="" />
+                  <p>DAVY JONES: Câu Chuyện Có Thật Về Cướp Biển Mặt Bạch Tuộc</p>
+                </a>
+              </li>
+              <li class="dropdown-col">
+                <a href="./details.html" id="7" onclick="detail(id)" class="dropdown-item">
+                  <img width="150" height="100"
+                    src="https://phephim.vn/wp-content/uploads/2020/06/maxresdefault-2-600x337.jpg" alt="" />
+                  <p>Bí Mật Đằng Sau Phim Của CHRISTOPHER NOLAN</p>
+                </a>
+              </li>
+              <li class="dropdown-col">
+                <a href="./details.html" id="8" onclick="detail(id)" class="dropdown-item">
+                  <img width="150" height="100"
+                    src="https://phephim.vn/wp-content/uploads/2020/06/bo-toc-man-do-600x337.jpg" alt="" />
+                  <p>BỘ TỘC MAN RỢ: Bộ Phim Bị Cấm Chiếu Tại Hơn 40 Quốc Gia
+                  </p>
+                </a>
+              </li>
+              <li class="dropdown-col">
+                <a href="./details.html" id="9" class="dropdown-item" onclick="detail(id)">
+                  <img width="150" height="100" src="https://phephim.vn/wp-content/uploads/2020/06/goodnight-mommy.jpg"
+                    alt="" />
+                  <p>GOODNIGHT MOMMY – NỖI ĐAU BIẾN TA THÀNH QUỶ DỮ?
+
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="nav-bar-right">
+        <input type="text" placeholder="Search" />
+        <i class="fas fa-search" style="color: white; margin-right: 30px"></i>
+        <i class="fas fa-moon" style="color: white; margin-right: 30px"></i>
+      </div>
+    </nav>
+    <div id="main-content">
+      <div id="slide" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#slide" data-slide-to="0" class="active"></li>
+          <li data-target="#slide" data-slide-to="1"></li>
+          <li data-target="#slide" data-slide-to="2"></li>
+          <li data-target="#slide" data-slide-to="3"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="./details.html" id="22" onclick="detail(id)">
+              <img src="https://phephim.vn/wp-content/uploads/2020/09/harry-meghan-thoa%CC%89-thua%CC%A3%CC%82n-netflix-1024x576.jpeg" alt=""
+                width="100%" />
+              <h3>Hoàng Tử Harry và Vợ Ký Thoả Thuận Nhiều Năm Với Netflix</h3>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="./details.html" id="23" onclick="detail(id)">
+              <img
+                src="https://phephim.vn/wp-content/uploads/2020/09/disneymulan2020-3.jpg"
+                alt="" width="100%" />
+              <h3>Mulan Sẽ ‘Hạ Giá’ Trong Thời Gian Tới</h3>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="./details.html" id="24" onclick="detail(id)">
+              <img src="https://phephim.vn/wp-content/uploads/2020/09/The-Haunting-of-Bly-Manor-teaser-%C4%91a%CC%82%CC%80u-tie%CC%82n-600x337.jpg" alt=""
+                width="100%" />
+              <h3>
+                The Haunting Of Bly Manor Công Bố Teaser Đầu Tiên
+              </h3>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="./details.html" id="13" onclick="detail(id)">
+              <img
+                src="https://phephim.vn/wp-content/uploads/2020/08/920491-tenet-movie-reviews-christopher-nolan-600x337.jpg"
+                alt="" width="100%" />
+              <h3>Tenet Có Thể Giải Cứu Phòng Vé Hàn Quốc?</h3>
+            </a>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#slide" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slide" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <div id="content-1" class="row">
+        <div id="big-img" class="col-8">
+          <a href="./details.html" id="25" onclick="detail(id)">
+            <img src="https://phephim.vn/wp-content/uploads/2020/08/tong_hop_trailer_dc_fandome-768x432.jpg" alt=""
+              width="100%" />
+            <h3>Tổng Hợp Trailer Được Công Bố Tại DC Fandome</h3>
+          </a>
+        </div>
+        <div id="side-ul" class="col-4">
+          <div class="list-group">
+            <a href="./details.html" onclick="detail(id)" id="26" class="list-group-item" style="margin-bottom: 15px">
+              <img src="https://phephim.vn/wp-content/uploads/2020/09/su%CC%9B%CC%A3-tri-a%CC%82n-da%CC%80nh-cho-Chadwick-Boseman-600x337.jpg" alt="" width="100%"
+                style="border-radius: 25px" />
+              <p>Sự Tri Ân Đối Với Chadwick Boseman</p>
+            </a>
+            <a href="./details.html" id="27" onclick="detail(id)" class="list-group-item">
+              <img src="https://phephim.vn/wp-content/uploads/2020/08/chadwick-boseman-black-panther-qua-%C4%91o%CC%9B%CC%80i-768x432.jpg" alt="" width="100%"
+                style="border-radius: 25px" />
+              <p>Chadwick Boseman Qua Đời Ở Tuổi 43</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="content-2" class="list-group">
+        <a href="./details.html" onclick="detail(id)" id="28" class="list-group-item">
+          <div style="overflow: hidden">
+            <img src="https://phephim.vn/wp-content/uploads/2020/08/great_gatsby-768x432.jpg" width="100%" alt="" />
+          </div>
+          <p>The Great Gatsby – Gatsby … Tội Nghiệp?</p>
+        </a>
+        <a href="./details.html" onclick="detail(id)" id="29" class="list-group-item">
+          <div style="overflow: hidden">
+            <img src="https://phephim.vn/wp-content/uploads/2020/08/Eb0C1yoVcAAVcoE.jpg" alt="" />
+          </div>
+          <p>
+            Harry Potter And The Sorcerer’s Stone Cán Mốc Một Tỷ USD Nhờ Màn Tái Xuất Tại Trung Quốc
+          </p>
+        </a>
+        <a href="./details.html" id="30" onclick="detail(id)" class="list-group-item">
+          <div style="overflow: hidden">
+            <img src="https://phephim.vn/wp-content/uploads/2020/08/will-smith-kevin-kart-2048x1161.jpg" alt="" />
+          </div>
+          <p>Will Smith Và Kevin Hart Tham Gia Phim Làm Lại Plane, Trains & Automobiles Của Paramount</p>
+        </a>
+        <a href="./details.html" onclick="detail(id)" id="31" class="list-group-item">
+          <div style="overflow: hidden">
+            <img src="https://phephim.vn/wp-content/uploads/2020/08/5f3196e1f34d0520bb306355.jpg" alt="" />
+          </div>
+          <p>The Owl House: Bộ Phim Hoạt Hình Có Nhân Vật Chính Song Tính Đầu Tiên Trên Disney Channel</p>
+        </a>
+        <a href="./details.html" onclick="detail(id)" id="21" class="list-group-item">
+          <div style="overflow: hidden">
+            <img src="https://phephim.vn/wp-content/uploads/2020/08/OliviaWildeSpiderWoman-768x432.jpg" alt="" />
+          </div>
+          <p>Phim Marvel Tiếp Theo Của Sony Với Nhân Vật Nữ Trung Tâm</p>
+        </a>
+      </div>
+    </div>
+    <div id="footer">
+      <img src="https://phephim.vn/wp-content/uploads/2020/05/pp-small-logo1.png" alt="" />
+      <p>Super copyright @ 2020 WereWolf Team</p>
+      <div>
+        <a href="https://www.facebook.com/vinhspm/"><i class="fab fa-facebook-square"></i>
+          <h6>Vinh Kieu</h6>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100031906610358"><i class="fab fa-facebook-square"></i>
+          <h6>Luat Nguyen</h6>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100014919933625"><i class="fab fa-facebook-square"></i>
+          <h6>Quang Nguyen</h6>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100039034562827"><i class="fab fa-facebook-square"></i>
+          <h6>Huy Nguyen</h6>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+<script src="./navbar.js"></script>
+
+</html>
