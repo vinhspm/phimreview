@@ -125,6 +125,9 @@ li.nav-item:hover > .dropdown-menu {
   #side-ul img{
     max-height: 152.2px;
   }
+  h3{
+    font-size:1.5rem;
+  }
 }
 @media (max-width: 993px) {
   .dropdown-menu {
@@ -148,7 +151,25 @@ li.nav-item:hover > .dropdown-menu {
   #side-ul img{
     max-height: 111.762px;
   }
+  h3{
+    font-size:1rem;
+  }
 
+}
+@media (max-width:736px){
+  #big-img img{
+    min-width:92.4%;
+  }
+  #side-ul p{
+    font-size:7.5px!important;
+  }
+  #content-2 p{
+    font-size:10px!important;
+  }
+  .carousel-inner img{
+    width: 100%;
+    max-height:28vh!important;
+  }
 }
 #big-img {
   position: relative;
